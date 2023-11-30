@@ -1,17 +1,18 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: url("../images/cover-image.png");
+  background-image: var(--background-image);
+  background-color: var(--background-color);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 1060px, 375px, contain;
+  background-size: 1068.8px, 668px, contain;
   background-attachment: fixed; /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .title-decor {
   display: block;
-  background-color: #ff0070;
-  color: #000028;
+  background-color: var(--accent-color);
+  color: var(--background-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-style: normal;
@@ -20,6 +21,7 @@
 }
 
 .text-shadow {
+  text-shadow: 2px 2px 0 var(--accent-color)
 }
 
 .header {
@@ -60,7 +62,7 @@
 }
 
 .header__rec-text {
-  color: #ff0070;
+  color: var(--accent-color);
   text-align: center;
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -74,14 +76,14 @@
   padding-right: 16px;
   padding-bottom: 72px; */
 
-  padding: 77px 16px 72px 0;
+  padding: 72px 10px 72px 0;
 }
 .header__theme-menu-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 15px;
+  gap: 13px;
 }
 
 .header__theme-menu-item {
@@ -92,7 +94,7 @@
   color: inherit;
   background-color: transparent;
   cursor: pointer;
-  color: #ff0070;
+  color: var(--accent-color);
   text-align: center;
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -100,6 +102,19 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: lowercase;
+  padding: 3px 13px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+ border-bottom: 1px solid var(--text-color);
 }
 
 .header__theme-menu-button_type_light {
@@ -110,9 +125,13 @@
 .header__theme-menu-button_type_dark {
 }
 
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+}
+
 .header__title {
   width: 355px;
-  color: #db00ff;
+  color: var(--big-title-cover);
   text-shadow: 4px 4px 0px #ff0070;
   font-family: IBM Plex Mono;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -151,7 +170,7 @@
 } */
 
 .list-item__title {
-  color: #ff0070;
+  color: var(--accent-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-style: normal;
@@ -161,7 +180,7 @@
 }
 
 .list-item__subtitle {
-  color: #000028;
+  color: var(--background-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-style: normal;
@@ -171,7 +190,7 @@
 }
 
 .list-item__text {
-  color: #f1b2ce;
+  color: var(--text-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-style: normal;
@@ -180,8 +199,25 @@
   margin-bottom: 20px;
 }
 
+.list-item__link {
+  text-decoration: none;
+}
+
+.list-item__link:hover {
+  text-decoration: underline;
+}
+
+.list-item__link:focus {
+  outline: none;
+}
+
+.list-item__link:focus-visible {
+ border: 1px solid var(--text-color);
+}
+
+
 .list-item__text.title-decor {
-  color: #000028;
+  color: var(--background-color);
 }
 
 .gallery {
@@ -227,7 +263,7 @@
 }
 
 .footer__text {
-  color: #db00ff;
+  color: var(--big-title-cover);
   text-shadow: 2px 2px 0px #ff0070;
   font-family: IBM Plex Mono;
   font-size: 116px;
@@ -237,6 +273,11 @@
 }
 
 @media screen and (min-width: 767px) {
+  .page {
+    background-size: 1638.4px, 1024px, contain;
+  }
+
+
   .header:before {
     bottom: 80px;
     left: 20px;
@@ -257,7 +298,7 @@
   }
 
   .header__theme-menu {
-    padding: 194px 27px 2px 0px;
+    padding: 185px 20px 2px 0px;
     grid-row: 1;
     grid-column: 2 / 3;
     display: grid;
@@ -368,6 +409,10 @@
 }
 
 @media screen and (min-width: 1023px) {
+  .page {
+    background-size: 1228.8px, 768px, contain;
+  }
+
   .header {
     padding-bottom: 195px;
     display: block;
@@ -396,7 +441,7 @@
   .header__text {
     width: 491px;
     min-height: 0;
-    margin-top: 60px;
+    margin-top: 55px;
     margin-left: 510px;
   }
 
@@ -409,7 +454,7 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 25px;
+    gap: 10px;
   }
 
   .advice__list-item {

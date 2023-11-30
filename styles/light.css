@@ -6,11 +6,31 @@
 
 :root {
   --accent-color: #ff8dcb;
-} 
+  --big-title-cover: #ffc2e6;
+  --text-color: #353430;
+  --main-color: #000;
+  --background-color: #fff1f7;
+  --background-image: url("../images/cover-image-light.png");
+}
 
 .page.theme_light {
+  --accent-color: #ff8dcb;
+  --big-title-cover: #ffc2e6;
+  --text-color: #353430;
+  --main-color: #000;
+  --background-color: #fff1f7;
+
+  --background-image: url("../images/cover-image-light.png");
+  /* color: var(--big-title-cover); */
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--text-color);
+}
+/* .header__title {
+  color: var(--big-title-cover);
+} */
