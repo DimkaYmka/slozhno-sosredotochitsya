@@ -13,7 +13,7 @@
   display: block;
   background-color: var(--accent-color);
   color: var(--background-color);
-  font-family: IBM Plex Mono;
+  font-family: 'IBM PLEX MONO', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -64,7 +64,7 @@
 .header__rec-text {
   color: var(--accent-color);
   text-align: center;
-  font-family: IBM Plex Mono;
+  font-family: 'IBM PLEX MONO', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -96,7 +96,7 @@
   cursor: pointer;
   color: var(--accent-color);
   text-align: center;
-  font-family: IBM Plex Mono;
+  font-family: 'IBM PLEX MONO', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -133,7 +133,7 @@
   width: 355px;
   color: var(--big-title-cover);
   text-shadow: 4px 4px 0px #ff0070;
-  font-family: IBM Plex Mono;
+  font-family: 'IBM PLEX MONO', sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
@@ -171,7 +171,7 @@
 
 .list-item__title {
   color: var(--accent-color);
-  font-family: IBM Plex Mono;
+  font-family: 'IBM PLEX MONO', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -181,7 +181,7 @@
 
 .list-item__subtitle {
   color: var(--background-color);
-  font-family: IBM Plex Mono;
+  font-family: 'IBM PLEX MONO', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -191,7 +191,7 @@
 
 .list-item__text {
   color: var(--text-color);
-  font-family: IBM Plex Mono;
+  font-family: 'IBM PLEX MONO', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -265,7 +265,7 @@
 .footer__text {
   color: var(--big-title-cover);
   text-shadow: 2px 2px 0px #ff0070;
-  font-family: IBM Plex Mono;
+  font-family: 'IBM PLEX MONO', sans-serif;
   font-size: 116px;
   font-style: normal;
   font-weight: 700;
