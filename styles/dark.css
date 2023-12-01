@@ -10,7 +10,8 @@
   --text-color: #f1b2ce;
   --main-color: #000;
   --background-color: #000028;
-
+  --border-color: #ff0070;
+  --hover-color: #ff0070
   --background-image: url("../images/cover-image-dark.png");
 }
 
@@ -20,6 +21,8 @@
   --text-color: #f1b2ce;
   --main-color: #000;
   --background-color: #000028;
+  --border-color: #ff0070;
+  --hover-color: #ff0070;
   --background-image: url("../images/cover-image-dark.png");
   /* color: var(--big-title-cover); */
   /* сохраните этот селектор в приведённом виде.

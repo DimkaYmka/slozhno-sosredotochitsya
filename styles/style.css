@@ -3,17 +3,22 @@
 .page {
   background-image: var(--background-image);
   background-color: var(--background-color);
-  background-position: top;
   background-repeat: no-repeat;
-  background-size: 1068.8px, 668px, contain;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed; /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+
+.theme_light .header .header__rec {
+  display: none;
 }
 
 .title-decor {
   display: block;
   background-color: var(--accent-color);
   color: var(--background-color);
-  font-family: 'IBM PLEX MONO', sans-serif;
+  font-family: "IBM PLEX MONO", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -21,13 +26,15 @@
 }
 
 .text-shadow {
-  text-shadow: 2px 2px 0 var(--accent-color)
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .header {
   position: relative;
-  padding-bottom: 105px;
+  padding-bottom: 100px;
   display: grid;
+  min-block-size: 100%;
+  min-height: 668px;
 }
 
 .header:before {
@@ -64,7 +71,7 @@
 .header__rec-text {
   color: var(--accent-color);
   text-align: center;
-  font-family: 'IBM PLEX MONO', sans-serif;
+  font-family: "IBM PLEX MONO", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -72,10 +79,6 @@
 }
 
 .header__theme-menu {
-  /* padding-top: 77px;
-  padding-right: 16px;
-  padding-bottom: 72px; */
-
   padding: 72px 10px 72px 0;
 }
 .header__theme-menu-list {
@@ -86,8 +89,6 @@
   gap: 13px;
 }
 
-.header__theme-menu-item {
-}
 .header__theme-menu-button {
   border: none;
   font: inherit;
@@ -96,7 +97,7 @@
   cursor: pointer;
   color: var(--accent-color);
   text-align: center;
-  font-family: 'IBM PLEX MONO', sans-serif;
+  font-family: "IBM PLEX MONO", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -106,7 +107,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--hover-color);
 }
 
 .header__theme-menu-button:focus {
@@ -114,26 +115,18 @@
 }
 
 .header__theme-menu-button:focus-visible {
- border-bottom: 1px solid var(--text-color);
-}
-
-.header__theme-menu-button_type_light {
-}
-.header__theme-menu-button_type_auto {
-}
-
-.header__theme-menu-button_type_dark {
+  border-bottom: 1px solid var(--text-color);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--border-color);
 }
 
 .header__title {
   width: 355px;
   color: var(--big-title-cover);
   text-shadow: 4px 4px 0px #ff0070;
-  font-family: 'IBM PLEX MONO', sans-serif;
+  font-family: "IBM PLEX MONO", sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
@@ -145,7 +138,7 @@
 .header__text {
   margin: 0 auto;
   width: 355px;
-  min-height: 117px;
+  /* min-height: 117px; */
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
 }
 .content {
@@ -153,25 +146,9 @@
   padding: 0 calc(100% - 97%);
 }
 
-.advice {
-}
-
-.advice__list {
-  list-style: none;
-  padding: 0;
-}
-
-.advice__list-item {
-  padding-bottom: 30px;
-}
-
-/* .advice__list-item:last-child {
-  padding-bottom: 0px;
-} */
-
-.list-item__title {
+.why__title {
   color: var(--accent-color);
-  font-family: 'IBM PLEX MONO', sans-serif;
+  font-family: "IBM PLEX MONO", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -179,9 +156,9 @@
   padding-bottom: 20px;
 }
 
-.list-item__subtitle {
+.why__subtitle {
   color: var(--background-color);
-  font-family: 'IBM PLEX MONO', sans-serif;
+  font-family: "IBM PLEX MONO", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -189,9 +166,9 @@
   margin-bottom: 10px;
 }
 
-.list-item__text {
+.why__text {
   color: var(--text-color);
-  font-family: 'IBM PLEX MONO', sans-serif;
+  font-family: "IBM PLEX MONO", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -199,34 +176,99 @@
   margin-bottom: 20px;
 }
 
-.list-item__link {
+.what {
+  padding-top: 30px;
+}
+
+.what__title {
+  color: var(--accent-color);
+  font-family: "IBM PLEX MONO", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  padding-bottom: 20px;
+}
+
+.what__subtitle {
+  color: var(--background-color);
+  font-family: "IBM PLEX MONO", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+  margin-bottom: 10px;
+}
+
+.what__text {
+  color: var(--text-color);
+  font-family: "IBM PLEX MONO", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+  margin-bottom: 20px;
+}
+
+.how {
+  padding-top: 30px;
+}
+
+.how__title {
+  color: var(--accent-color);
+  font-family: "IBM PLEX MONO", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  padding-bottom: 20px;
+}
+
+.how__subtitle {
+  color: var(--background-color);
+  font-family: "IBM PLEX MONO", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+  margin-bottom: 10px;
+}
+
+.how__text {
+  color: var(--text-color);
+  font-family: "IBM PLEX MONO", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 130% */
+  margin-bottom: 20px;
+}
+
+.link {
   text-decoration: none;
 }
 
-.list-item__link:hover {
+.link:hover {
   text-decoration: underline;
 }
 
-.list-item__link:focus {
+.link:focus {
   outline: none;
 }
 
-.list-item__link:focus-visible {
- border: 1px solid var(--text-color);
+.link:focus-visible {
+  border: 1px solid var(--text-color);
 }
-
 
 .list-item__text.title-decor {
   color: var(--background-color);
 }
 
 .gallery {
+  padding-top: 30px;
   display: grid;
   gap: 11px;
   justify-content: center;
-}
-
-.gallery__title {
 }
 
 .gallery__image {
@@ -238,6 +280,8 @@
   text-align: center;
   position: relative;
   padding: 330px calc(100% - 97%) 285px;
+  min-block-size: 100%;
+  min-height: 667px;
 }
 
 .footer:before {
@@ -265,7 +309,7 @@
 .footer__text {
   color: var(--big-title-cover);
   text-shadow: 2px 2px 0px #ff0070;
-  font-family: 'IBM PLEX MONO', sans-serif;
+  font-family: "IBM PLEX MONO", sans-serif;
   font-size: 116px;
   font-style: normal;
   font-weight: 700;
@@ -273,10 +317,9 @@
 }
 
 @media screen and (min-width: 767px) {
-  .page {
+  /* .page {
     background-size: 1638.4px, 1024px, contain;
-  }
-
+  } */
 
   .header:before {
     bottom: 80px;
@@ -290,6 +333,7 @@
 
   .header {
     padding-bottom: 242px;
+    min-height: 1024px;
   }
 
   .header__rec {
@@ -318,41 +362,49 @@
     grid-column: 3 / 2;
     margin-top: 106px;
     display: block;
-    /* display: flex; */
     margin-left: 365px;
     width: 367px;
   }
 
-  .advice__list-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 90px;
-    padding-bottom: 60px;
+  .why {
+    display: grid;
+    column-gap: 15px;
   }
 
-  .advice__list-item:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
+  .why__item {
+    grid-column: 2;
   }
 
-  .advice__list-item:nth-child(3) {
-    flex-direction: row;
-    gap: 69px;
-  }
-
-  .list-item__title {
+  .why__title {
+    grid-row: 1;
+    grid-column: 1;
     width: 236px;
   }
 
-  .list-item__list {
+  .what {
+    padding-top: 60px;
   }
 
-  .list-item__list-item {
+  .what__title {
+    width: 236px;
+  }
+
+  .how {
+    padding-top: 60px;
+    display: grid;
+    column-gap: 15px;
+  }
+
+  .how__title{
+    width: 236px;
+  }
+
+  .how__item {
+    grid-column: 2;
   }
 
   .gallery {
+    padding-top: 60px;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   }
@@ -395,6 +447,7 @@
 
   .footer {
     padding: 530px calc(100% - 97%) 450px;
+    min-height: 1024px;
   }
 
   .footer:before {
@@ -409,18 +462,18 @@
 }
 
 @media screen and (min-width: 1023px) {
-  .page {
+  /* .page {
     background-size: 1228.8px, 768px, contain;
-  }
+  } */
 
   .header {
     padding-bottom: 195px;
     display: block;
+    min-height: 768px;
   }
 
   .title-decor {
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
     line-height: 23.4px; /* 130% */
   }
@@ -432,9 +485,7 @@
   .header__title {
     width: 759px;
     font-size: 157px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 82.5%;
     padding-top: 280px;
   }
 
@@ -457,56 +508,83 @@
     gap: 10px;
   }
 
-  .advice__list-item {
+  .why {
     display: grid;
-    flex-direction: row;
-    /* justify-content: space-between; */
-    gap: 12px;
-    padding-bottom: 60px;
-    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
   }
 
-  .list-item__text {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 23.4px;
+  .why__item {
+    grid-column: 2;
   }
 
-  .list-item__title {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 23.4px;
-    width: 100%;
+  .why__title {
+    grid-row: 1;
+    grid-column: 1;
+    width: 315px;
   }
 
-  .advice__list-item:nth-child(2) .list-item__list {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+  .what {
+    padding-top: 60px;
+    display: grid;
+    column-gap: 20px;
   }
 
-  .advice__list-item:nth-child(2) .list-item__list .list-item__list-item {
-    width: 100%;
+  .what__title {
+    width: 315px;
+  }
+  .what__item {
+    width: 315px;
+    grid-row: 2;
+}
+  .how {
+    padding-top: 60px;
+    display: grid;
+    column-gap: 20px;
   }
 
-  .advice__list-item:nth-child(2) .list-item__title {
-    width: 263px;
+  .how__title{
+    width: 315px;
   }
 
-  .advice__list-item:nth-child(3) {
-    gap: 10px;
+  .how__item {
+    grid-column: 2;
   }
 
   .footer {
     padding: 380px calc(100% - 98%) 310px;
+    min-height: 768px;
   }
 
   .footer__text {
     font-size: 157px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 82.5%;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --accent-color: #ff0070;
+    --big-title-cover: #db00ff;
+    --text-color: #f1b2ce;
+    --main-color: #000;
+    --background-color: #000028;
+    --border-color: #ff0070;
+    --hover-color: #ff0070;
+    --background-image: url("../images/cover-image-dark.png");
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --accent-color: #ff8dcb;
+    --big-title-cover: #ffc2e6;
+    --text-color: #353430;
+    --main-color: #000;
+    --background-color: #fff1f7;
+    --border-color: #353430;
+    --hover-color: #353430;
+    --background-image: url("../images/cover-image-light.png");
+  }
+
+
 }
