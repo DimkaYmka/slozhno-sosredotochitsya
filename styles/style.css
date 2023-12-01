@@ -18,7 +18,7 @@
   display: block;
   background-color: var(--accent-color);
   color: var(--background-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -37,7 +37,7 @@
   min-height: 668px;
 }
 
-.header:before {
+.decorated-zone:before {
   position: absolute;
   bottom: 50px;
   left: 10px;
@@ -48,7 +48,7 @@
   content: "";
 }
 
-.header::after {
+.decorated-zone::after {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -71,7 +71,7 @@
 .header__rec-text {
   color: var(--accent-color);
   text-align: center;
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -97,7 +97,7 @@
   cursor: pointer;
   color: var(--accent-color);
   text-align: center;
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -126,7 +126,7 @@
   width: 355px;
   color: var(--big-title-cover);
   text-shadow: 4px 4px 0px #ff0070;
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
@@ -148,7 +148,7 @@
 
 .why__title {
   color: var(--accent-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -158,7 +158,7 @@
 
 .why__subtitle {
   color: var(--background-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -168,7 +168,7 @@
 
 .why__text {
   color: var(--text-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -182,7 +182,7 @@
 
 .what__title {
   color: var(--accent-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -192,7 +192,7 @@
 
 .what__subtitle {
   color: var(--background-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -202,7 +202,7 @@
 
 .what__text {
   color: var(--text-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -216,7 +216,7 @@
 
 .how__title {
   color: var(--accent-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -226,7 +226,7 @@
 
 .how__subtitle {
   color: var(--background-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -236,7 +236,7 @@
 
 .how__text {
   color: var(--text-color);
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -269,6 +269,7 @@
   display: grid;
   gap: 11px;
   justify-content: center;
+  padding-bottom: 45px;
 }
 
 .gallery__image {
@@ -279,12 +280,12 @@
 .footer {
   text-align: center;
   position: relative;
-  padding: 330px calc(100% - 97%) 285px;
+  padding: 290px calc(100% - 97%) 325px;
   min-block-size: 100%;
   min-height: 667px;
 }
 
-.footer:before {
+/* .footer:before {
   position: absolute;
   bottom: 8px;
   left: 10px;
@@ -304,12 +305,12 @@
   border-top: 1px solid #ff0070;
   border-right: 1px solid #ff0070;
   content: "";
-}
+} */
 
 .footer__text {
   color: var(--big-title-cover);
   text-shadow: 2px 2px 0px #ff0070;
-  font-family: "IBM PLEX MONO", sans-serif;
+  font-family: "IBM PLEX MONO", monospace;
   font-size: 116px;
   font-style: normal;
   font-weight: 700;
@@ -321,12 +322,12 @@
     background-size: 1638.4px, 1024px, contain;
   } */
 
-  .header:before {
+  .decorated-zone:before {
     bottom: 80px;
     left: 20px;
   }
 
-  .header::after {
+  .decorated-zone::after {
     top: 20px;
     right: 20px;
   }
@@ -407,6 +408,7 @@
     padding-top: 60px;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    padding-bottom: 65px;
   }
 
   .gallery__title {
@@ -446,11 +448,11 @@
   }
 
   .footer {
-    padding: 530px calc(100% - 97%) 450px;
+    padding: 470px calc(100% - 97%) 520px;
     min-height: 1024px;
   }
 
-  .footer:before {
+  /* .footer:before {
     bottom: 10px;
     left: 20px;
   }
@@ -458,7 +460,7 @@
   .footer::after {
     top: 85px;
     right: 20px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1023px) {
@@ -550,8 +552,13 @@
     grid-column: 2;
   }
 
+  .gallery {
+    padding-bottom: 55px;
+  }
+
+
   .footer {
-    padding: 380px calc(100% - 98%) 310px;
+    padding: 325px calc(100% - 98%) 380px;
     min-height: 768px;
   }
 
