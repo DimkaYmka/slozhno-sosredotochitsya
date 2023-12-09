@@ -4,18 +4,7 @@
   переключая тему
 */
 
-:root {
-  --accent-color: #ff0070;
-  --big-title-cover: #db00ff;
-  --text-color: #f1b2ce;
-  --main-color: #000;
-  --background-color: #000028;
-  --border-color: #ff0070;
-  --hover-color: #ff0070
-  --background-image: url("../images/cover-image-dark.png");
-}
-
-.page.theme_dark {
+/* :root {
   --accent-color: #ff0070;
   --big-title-cover: #db00ff;
   --text-color: #f1b2ce;
@@ -24,6 +13,19 @@
   --border-color: #ff0070;
   --hover-color: #ff0070;
   --background-image: url("../images/cover-image-dark.png");
+} */
+
+.page.theme_dark {
+  --accent-color: #ff0070;
+  --big-title-cover: #db00ff;
+  --text-color: #f1b2ce;
+  --main-color: #000;
+  --background-color: #000028;
+  --border-color: #ff0070;
+  --hover-color: #FF007066;
+  --background-image: url("../images/cover-image-dark.png");
+  --display: flex;
+  --title-cover: #000028;
   /* color: var(--big-title-cover); */
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -34,3 +36,19 @@
 /* .header__title {
   color: var(--big-title-cover);
 } */
+
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --accent-color: #ff0070;
+    --big-title-cover: #db00ff;
+    --text-color: #f1b2ce;
+    --main-color: #000;
+    --background-color: #000028;
+    --border-color: #ff0070;
+    --hover-color: #FF007066;
+    --background-image: url("../images/cover-image-dark.png");
+    --display: flex;
+    --title-cover: #000028;
+  }
+}

@@ -4,16 +4,16 @@
   переключая тему
 */
 
-:root {
+/* :root {
   --accent-color: #ff8dcb;
   --big-title-cover: #ffc2e6;
   --text-color: #353430;
   --main-color: #000;
   --background-color: #fff1f7;
   --border-color: #353430;
-  --background-image: url("../images/cover-image-light.png");
   --hover-color: #353430;
-}
+  --background-image: url("../images/cover-image-light.png");
+} */
 
 .page.theme_light {
   --accent-color: #ff8dcb;
@@ -22,8 +22,10 @@
   --main-color: #000;
   --background-color: #fff1f7;
   --border-color: #353430;
-  --hover-color: #353430;
+  --hover-color: #32312D66;
   --background-image: url("../images/cover-image-light.png");
+  --display: none;
+  --title-cover: #353430;
   /* color: var(--big-title-cover); */
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -31,3 +33,21 @@
   */
 }
 
+.how__subtitle {
+  font-weight: 400;
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --accent-color: #ff8dcb;
+    --big-title-cover: #ffc2e6;
+    --text-color: #353430;
+    --main-color: #000;
+    --background-color: #fff1f7;
+    --border-color: #353430;
+    --hover-color: #32312D66;
+    --background-image: url("../images/cover-image-light.png");
+    --display: none;
+    --title-cover: #353430;
+  }
+}
