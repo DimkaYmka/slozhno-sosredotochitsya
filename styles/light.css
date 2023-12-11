@@ -33,6 +33,11 @@
   */
 }
 
+
+.theme_light .header .header__rec {
+  display: none;
+}
+
 .how__subtitle {
   font-weight: 400;
 }

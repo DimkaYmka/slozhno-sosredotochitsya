@@ -50,5 +50,6 @@
     --background-image: url("../images/cover-image-dark.png");
     --display: flex;
     --title-cover: #000028;
+    --title-color: #FF0070;
   }
 }
