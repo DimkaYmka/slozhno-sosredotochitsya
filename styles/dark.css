@@ -26,6 +26,7 @@
   --background-image: url("../images/cover-image-dark.png");
   --display: flex;
   --title-cover: #000028;
+  --title-color: #FF0070;
   /* color: var(--big-title-cover); */
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,

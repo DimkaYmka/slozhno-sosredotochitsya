@@ -26,6 +26,7 @@
   --background-image: url("../images/cover-image-light.png");
   --display: none;
   --title-cover: #353430;
+  --title-color: #353430;
   /* color: var(--big-title-cover); */
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -51,5 +52,6 @@
     --background-image: url("../images/cover-image-light.png");
     --display: none;
     --title-cover: #353430;
+    --title-color: #353430;
   }
 }
