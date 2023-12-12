@@ -187,16 +187,7 @@
   margin-bottom: 20px;
 }
 
-.title-decor {
-  display: block;
-  background-color: var(--accent-color);
-  color: var(--title-cover);
-  font-family: "IBM PLEX MONO", monospace;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23.4px; /* 130% */
-}
+
 
 .title {
   color: var(--title-color);
@@ -206,6 +197,17 @@
   font-weight: 700;
   line-height: 23.4px; /* 130% */
   padding-bottom: 20px;
+}
+
+.title-decor {
+  display: block;
+  background-color: var(--accent-color);
+  color: var(--title-cover);
+  font-family: "IBM PLEX MONO", monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
 }
 
 .link {
