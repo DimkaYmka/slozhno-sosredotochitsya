@@ -38,9 +38,6 @@
   display: none;
 }
 
-.how__subtitle {
-  font-weight: 400;
-}
 
 @media (prefers-color-scheme: light) {
   .page {

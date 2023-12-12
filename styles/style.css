@@ -165,15 +165,7 @@
   padding-top: 30px;
 }
 
-.title {
-  color: var(--title-color);
-  font-family: "IBM PLEX MONO", monospace;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 23.4px; /* 130% */
-  padding-bottom: 20px;
-}
+
 
 .how__subtitle {
   color: var(--background-color);
@@ -204,6 +196,16 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
+}
+
+.title {
+  color: var(--title-color);
+  font-family: "IBM PLEX MONO", monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  padding-bottom: 20px;
 }
 
 .link {
